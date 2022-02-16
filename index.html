@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Bold Touch</h4>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Testominals</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="cover-point" id="cover-point">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three">
+
+            </div>
+        </div>
+    </nav>
+    <main>
+
+    </main>
+
+    <script>
+        const navSlider = () => {
+            const cover_point = document.getElementById('cover-point');
+            const nav_link = document.getElementById('nav-links');
+
+            cover_point.addEventListener('click', () => {
+                nav_link.classList.toggle('nav-active');
+
+            })
+        };
+        navSlider();
+    </script>
+</body>
+
+</html>
